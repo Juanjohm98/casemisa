@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profilés metaliques</title>
+
+  <!-- Enlace a TailwindCSS desde CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Enlace al archivo CSS personalizado -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50 font-sans">
+  <!-- Navbar -->
+  <nav class="navbar">
+    <img src="media/logo.png" alt="Logo" width="85" >
+    <h1>Produits</h1>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="profiles.html">Profilés Metaliques</a>
+    </div>
+  </nav>
+
+  <!-- Contenedor principal -->
+  <main class="container">
+    <h2>Mesures disponibles</h2>
+
+    <!-- Grid de Tarjetas -->
+    <div class="card-grid">
+      <!-- Tarjeta CW -->
+      <div class="card" data-id="CW">
+        <h3 class="titulo">CW 50</h3>
+        <img class="imagen" src="media/CW/cw-50.png" alt="Perfil CW">
+        <div class="descripcion">
+          <h2>Mesures disponibles</h2>
+          <h3 class="cotas"></h3>
+          <table class="tabla-medidas">
+            <tbody></tbody>
+          </table>
+        </div>
+        <div class="buttons">
+          <button class="boton" onclick="cambiarContenido('CW', '50')">CW 50</button>
+          <button class="boton" onclick="cambiarContenido('CW', '75')">CW 75</button>
+          <button class="boton" onclick="cambiarContenido('CW', '100')">CW 100</button>
+        </div>
+      </div>
+
+      <!-- Tarjeta UW -->
+      <div class="card" data-id="UW">
+        <h3 class="titulo">UW 50</h3>
+        <img class="imagen" src="media/UW/uw-50.png" alt="Perfil UW">
+        <div class="descripcion">
+          <h2>Mesures disponibles</h2>
+          <h3 class="cotas"></h3>
+          <table class="tabla-medidas">
+            <tbody></tbody>
+          </table>
+        </div>
+        <div class="buttons">
+          <button class="boton" onclick="cambiarContenido('UW', '50')">UW 50</button>
+          <button class="boton" onclick="cambiarContenido('UW', '75')">UW 75</button>
+          <button class="boton" onclick="cambiarContenido('UW', '100')">UW 100</button>
+        </div>
+      </div>
+
+      <!-- Tarjeta UA -->
+      <div class="card" data-id="UA">
+        <h3 class="titulo">UA 50</h3>
+        <img class="imagen" src="media/UA/ua-50.png" alt="Perfil UA">
+        <div class="descripcion">
+          <h2>Mesures disponibles</h2>
+          <h3 class="cotas"></h3>
+          <table class="tabla-medidas">
+            <tbody></tbody>
+          </table>
+        </div>
+        <div class="buttons">
+          <button class="boton" onclick="cambiarContenido('UA', '50')">UA 50</button>
+          <button class="boton" onclick="cambiarContenido('UA', '75')">UA 75</button>
+          <button class="boton" onclick="cambiarContenido('UA', '100')">UA 100</button>
+        </div>
+      </div>
+
+      <!-- Tarjeta CD -->
+      <div class="card" data-id="CD">
+        <h3 class="titulo">CD 60</h3>
+        <img class="imagen" src="media/CD/cd-60.png" alt="Perfil CD">
+        <div class="descripcion">
+          <h2>Mesures disponibles</h2>
+          <h3 class="cotas"></h3>
+          <table class="tabla-medidas">
+            <tbody></tbody>
+          </table>
+        </div>
+        <div class="buttons">
+          <button class="boton" onclick="cambiarContenido('CD', '60')">CD 60</button>
+          
+        </div>
+      </div>
+
+      <!-- Tarjeta UD -->
+      <div class="card" data-id="UD">
+        <h3 class="titulo">UD 28</h3>
+        <img class="imagen" src="media/CD/UD-28.png" alt="Perfil UD">
+        <div class="descripcion">
+          <h2>Mesures disponibles</h2>
+          <h3 class="cotas"></h3>
+          <table class="tabla-medidas">
+            <tbody></tbody>
+          </table>
+        </div>
+        <div class="buttons">
+          <button class="boton" onclick="cambiarContenido('UD', '28')">UD 28</button>
+          
+        </div>
+      </div>
+
+      <!-- Tarjeta UW FLEX -->
+      <div class="card" data-id="UWF">
+        <h3 class="titulo">UW FLEX 50</h3>
+        <img class="imagen" src="media/uw/uwf-50.png" alt="UW FLEX">
+        <div class="descripcion">
+          <h2>Mesures disponibles</h2>
+          <h3 class="cotas"></h3>
+          <table class="tabla-medidas">
+            <tbody></tbody>
+          </table>
+        </div>
+        <div class="buttons">
+          <button class="boton" onclick="cambiarContenido('UWF', '50')">UW FLEX 50</button>
+          <button class="boton" onclick="cambiarContenido('UWF', '75')">UW FLEX 75</button>
+        </div>
+      </div>
+
+      <!-- Tarjeta CH -->
+      <div class="card" data-id="CH">
+        <h3 class="titulo">CHAPEAU AMORTISEUR </h3>
+        <img class="imagen" src="media/CH/c-14.png" alt="Chapeau Amortisseur">
+        <div class="descripcion">
+          <h2>Mesures disponibles</h2>
+          <h3 class="cotas"></h3>
+          <table class="tabla-medidas">
+            <tbody></tbody>
+          </table>
+        </div>
+        <div class="buttons">
+          <button class="boton" onclick="cambiarContenido('CH', '14')">AMORTISEUR</button>
+          <button class="boton" onclick="cambiarContenido('CH', '15')">CHAPEAU 15</button>
+          <button class="boton" onclick="cambiarContenido('CH', '27')">CHAPEAU 27</button>
+          <button class="boton" onclick="cambiarContenido('CH', '36')">CHAPEAU 36</button>
+        </div>
+      </div>
+          <!-- Tarjeta tr -->
+          <div class="card" data-id="TR">
+            <h3 class="titulo">TRIMELLE 12.5</h3>
+            <img class="imagen" src="media/TR/TR12.5.png" alt="Chapeau Amortisseur">
+            <div class="descripcion">
+              <h2>Mesures disponibles</h2>
+              <h3 class="cotas"></h3>
+              <table class="tabla-medidas">
+                <tbody></tbody>
+              </table>
+            </div>
+            <div class="buttons">
+              <button class="boton" onclick="cambiarContenido('TR', '12.5')">TR12.5</button>
+              <button class="boton" onclick="cambiarContenido('TR', '28')">TR 28</button>
+              <button class="boton" onclick="cambiarContenido('TR', '40')">TR 40</button>
+              <button class="boton" onclick="cambiarContenido('TR', '38')">TR 38</button>
+            </div>
+          </div>
+           <!-- Tarjeta EM -->
+           <div class="card" data-id="EM">
+            <h3 class="titulo">EMBRASSURE 3</h3>
+            <img class="imagen" src="media/EM/EM3.png" alt="Chapeau Amortisseur">
+            <div class="descripcion">
+              <h2>Mesures disponibles</h2>
+              <h3 class="cotas"></h3>
+              <table class="tabla-medidas">
+                <tbody></tbody>
+              </table>
+            </div>
+            <div class="buttons">
+              <button class="boton" onclick="cambiarContenido('EM', '3')">EMBRASSURE 3</button>
+              <button class="boton" onclick="cambiarContenido('EM', '6')">EMBRASSURE 6</button>
+              
+            </div>
+          </div>
+           <!-- Tarjeta BG -->
+           <div class="card" data-id="BG">
+            <h3 class="titulo">Baguette</h3>
+            <img class="imagen" src="media/BG/BG25.png" alt="Chapeau Amortisseur">
+            <div class="descripcion">
+              <h2>Mesures disponibles</h2>
+              <h3 class="cotas"></h3>
+              <table class="tabla-medidas">
+                <tbody></tbody>
+              </table>
+            </div>
+            <div class="buttons">
+              <button class="boton" onclick="cambiarContenido('BG', '25')">BG 25</button>
+              <button class="boton" onclick="cambiarContenido('BG', 'F')">BG FLEXIBLE</button>
+              
+            </div>
+          </div>
+          <!-- Tarjeta EN-->
+          <div class="card" data-id="EN">
+            <h3 class="titulo">Enduit</h3>
+            <img class="imagen" src="media/EN/EN.png" alt="Chapeau Amortisseur">
+            <div class="descripcion">
+              <h2>Mesures disponibles</h2>
+              <h3 class="cotas"></h3>
+              <table class="tabla-medidas">
+                <tbody></tbody>
+              </table>
+            </div>
+            <div class="buttons">
+              <button class="boton" onclick="cambiarContenido('EN', '25')">Profile enduit</button>
+              
+              
+            </div>
+          </div>
+    </div>
+  </main>
+
+  <!-- Archivo JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

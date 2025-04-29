@@ -1,0 +1,157 @@
+/* Estilo general */
+body {
+  background-color: #f9fafb;
+  font-family: 'Sans-serif';
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  align-content: center;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h1 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+.navbar .menu a {
+  color: #4b5563;
+  margin-left: 16px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar .menu a:hover {
+  color: #1f2937;
+}
+
+/* Contenedor principal */
+.container {
+  padding: 32px;
+  margin: auto;
+  width: 100%;
+}
+
+/* Título categoría */
+.container h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 24px;
+}
+
+/* Grid de tarjetas con columnas adaptadas */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); /* Ajusta tamaño deseado */
+  gap: 32px;
+}
+
+.card {
+  margin: auto;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+  min-height: 500px; /* Opcional */
+  max-width: 100%; /* Asegura que no se salga del contenedor */
+  min-width: 450px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #374151;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 16px;
+  border-radius: 12px 12px 0 0;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.card p {
+  color: #6b7280;
+  margin-bottom: 16px;
+  font-size: 1.125rem;
+}
+
+/* Botones */
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.boton {
+  background-color: #f63b3b;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.boton:hover {
+  background-color: #5f0303;
+}
+
+.boton + .boton {
+  margin-left: 8px;
+}
+
+/* Media queries para el grid de tarjetas */
+@media (max-width: 960px) {
+  .card-grid {
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); /* Muestra 2 columnas si el ancho es menor a 960px */
+  }
+}
+
+@media (max-width: 600px) {
+  .card-grid {
+    grid-template-columns: 1fr; /* Muestra 1 columna si el ancho es menor a 600px */
+  }
+}
+.tabla-medidas tbody {
+  align-items: center;
+  display: flex; /* Cambia el diseño a flexbox */
+  flex-wrap: wrap; /* Permite que las filas se ajusten en varias líneas si es necesario */
+  gap: 10px; /* Espaciado entre las filas */
+  margin: auto;
+  padding-bottom: 5px;
+}
+
+.tabla-medidas tr {
+  display: flex;
+  margin: auto;
+  flex-direction: column; /* Las celdas dentro de cada fila estarán en columna */
+  background-color: #ffffff;
+  padding: 6px;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
